@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://daras-art.fr/sitemap.xml
