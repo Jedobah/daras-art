@@ -106,7 +106,7 @@ h3,
   background-size: cover;
   background-position: center;
   opacity: 0;
-  animation: heroFade 42s infinite;
+  animation: heroFade 27s infinite;
   transform: scale(1.08);
   filter: saturate(0.88) contrast(1.08);
 }
@@ -120,13 +120,13 @@ h3,
   background-image:
     linear-gradient(rgba(3, 3, 2, 0.64), rgba(3, 3, 2, 0.82)),
     url("oeuvre-03.jpg");
-  animation-delay: 14s;
+  animation-delay: 9s;
 }
 .hero-slide:nth-child(3) {
   background-image:
     linear-gradient(rgba(3, 3, 2, 0.66), rgba(3, 3, 2, 0.82)),
     url("oeuvre-07.jpg");
-  animation-delay: 28s;
+  animation-delay: 18s;
 }
 @keyframes heroFade {
   0%,
@@ -555,23 +555,6 @@ textarea:focus-visible {
   .loader {
     display: none;
   }
-}
-
-/* Diaporama d’arrière-plan plus rapide */
-.hero-slide {
-  animation-duration: 27s !important;
-}
-
-.hero-slide:nth-child(1) {
-  animation-delay: 0s !important;
-}
-
-.hero-slide:nth-child(2) {
-  animation-delay: 9s !important;
-}
-
-.hero-slide:nth-child(3) {
-  animation-delay: 18s !important;
 }
 
 /* Correction complète du formulaire contact */
