@@ -67,18 +67,19 @@
 <section id="disponibles"><div class="wrap"><div class="section-kicker">Acquisition</div><h2 class="section-title">Œuvres disponibles</h2><div class="available"><a class="avail" href="oeuvres/le-petit-dejeuner.html"><strong>Le petit déjeuner</strong><span>2014 · 50 × 65 cm</span></a><a class="avail" href="oeuvres/les-pommes-rouges.html"><strong>Les pommes rouges</strong><span>2014 · 30 × 40 cm</span></a><a class="avail" href="oeuvres/iris-et-lilas-dans-un-obus.html"><strong>Iris et lilas dans un obus</strong><span>2015 · 30 × 40 cm</span></a><a class="avail" href="oeuvres/bouquet-dans-un-vase.html"><strong>Bouquet dans un vase</strong><span>2015 · 30 × 40 cm</span></a></div></div></section>
 <section id="apropos"><div class="wrap intro"><div><div class="section-kicker">Démarche</div><h2 class="section-title">Pastel, lumière & clair-obscur</h2></div><div class="copy"><p>Daras est artiste pastelliste depuis 2013. Le pastel sec permet le mélange des couleurs directement sur le support. Les doigts créent les volumes avec immédiateté, tandis que les touches de lumière apparaissent naturellement.</p><p>Le clair-obscur n’est pas une opposition manichéenne. Il rappelle que sans lumière il n’y a pas d’ombre, et que sans ombre il n’y a pas de lumière.</p><p>La lumière agit comme une information. Les ombres deviennent des silences, parfois des cris, à l’intérieur de cette information.</p></div></div></section>
 <div class="statement">« Je ne cherche rien à transmettre.<br><em>Je suis simplement dans mon élément.</em> »</div>
-<section id="contact"><div class="wrap contact-box"><div><div class="section-kicker">Contact</div><h2 class="section-title">Entrer en relation</h2><p class="copy">Pour une exposition, une acquisition, une commande ou un échange autour d’une œuvre.</p><a class="email" href="mailto:ludovicdaras@gmail.com">ludovicdaras@gmail.com</a><div class="socials"><a href="https://www.instagram.com/daras_art?igsh=MW9zbjcyaDUyam13Yg==" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/share/18viSxwKbE/" target="_blank" rel="noopener">Facebook</a><a href="https://www.linkedin.com/in/daras-9298ab410?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">LinkedIn</a></div></div><form class="form" action="mailto:ludovicdaras@gmail.com" method="post" enctype="text/plain"><input name="Nom" placeholder="Nom"><input name="Email" type="email" placeholder="Email"><input name="Sujet" placeholder="Sujet"><textarea name="Message" placeholder="Message"></textarea><button class="cta" type="submit">Envoyer →</button></form></div></section>
+<section id="contact"><div class="wrap contact-box"><div><div class="section-kicker">Contact</div><h2 class="section-title">Entrer en relation</h2><p class="copy">Pour une exposition, une acquisition, une commande ou un échange autour d’une œuvre.</p><a class="email" href="mailto:ludovicdaras@gmail.com">ludovicdaras@gmail.com</a><div class="socials"><a href="https://www.instagram.com/daras_art?igsh=MW9zbjcyaDUyam13Yg==" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/share/18viSxwKbE/" target="_blank" rel="noopener">Facebook</a><a href="https://www.linkedin.com/in/daras-9298ab410?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">LinkedIn</a></div></div><form id="formulaire-contact" class="form"action="mailto:ludovicdaras@gmail.com" method="post" enctype="text/plain"><input name="Nom" placeholder="Nom"><input name="Email" type="email" placeholder="Email"><input name="Sujet" placeholder="Sujet"><textarea name="Message" placeholder="Message"></textarea><button class="cta" type="submit">Envoyer →</button></form></div></section>
 <footer><img class="footer-logo" src="assets/logo-daras.png" alt="Logo Daras"><div class="serif" style="font-size:32px;color:white;letter-spacing:.16em">DARAS</div><p>La lumière révèle ce que les ombres subliment.</p><p>© 2026 Daras — Artiste pastelliste</p></footer>
 <script>document.querySelectorAll(".filter").forEach(btn=>{btn.addEventListener("click",()=>{document.querySelectorAll(".filter").forEach(b=>b.classList.remove("active"));btn.classList.add("active");const f=btn.dataset.filter;document.querySelectorAll(".work").forEach(card=>{card.style.display=(f==="all"||card.dataset.cat===f)?"block":"none"})})});</script>
-
-  if (window.location.hash === "#contact") {
-    window.addEventListener("load", function () {
-      const contact = document.querySelector("#contact");
-      if (contact) {
+<script>
+  window.addEventListener("load", function () {
+    if (window.location.hash) {
+      const target = document.querySelector(window.location.hash);
+      if (target) {
         setTimeout(function () {
-          contact.scrollIntoView({ behavior: "smooth", block: "start" });
-        }, 300);
+          target.scrollIntoView({ behavior: "smooth", block: "center" });
+        }, 1000);
       }
-    });
-  }
-</script></body></html>
+    }
+  });
+</script>
+ </body></html>
