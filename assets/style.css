@@ -4,7 +4,7 @@
   --muted: rgba(255, 255, 255, 0.62);
   --soft: rgba(255, 255, 255, 0.84);
   --line: rgba(208, 161, 102, 0.22);
-} /*backup avant refactoring su CSS*/
+}
 * {
   box-sizing: border-box;
 }
@@ -514,7 +514,7 @@ textarea:focus-visible {
   display: grid;
   place-items: center;
   background: #030302;
-  animation: loaderOut 0.9s ease 1.45s forwards;
+  animation: loaderOut 1.15s ease 2.25s forwards;
   pointer-events: none;
 }
 
@@ -522,8 +522,8 @@ textarea:focus-visible {
   width: min(180px, 45vw);
   opacity: 0;
   animation:
-    logoIn 0.9s ease forwards,
-    logoOut 0.55s ease 1.05s forwards;
+    logoIn 1.2s ease forwards,
+    logoOut 0.85s ease 1.55s forwards;
 }
 
 @keyframes logoIn {
@@ -555,17 +555,6 @@ textarea:focus-visible {
   .loader {
     display: none;
   }
-}
-
-/* Version 5 — ajustements demandés */
-.loader {
-  animation: loaderOut 1.15s ease 2.25s forwards !important;
-}
-
-.loader img {
-  animation:
-    logoIn 1.2s ease forwards,
-    logoOut 0.85s ease 1.55s forwards !important;
 }
 
 /* Diaporama d’arrière-plan plus rapide */
