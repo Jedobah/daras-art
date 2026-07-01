@@ -198,6 +198,11 @@ h3,
   letter-spacing: 0.06em;
   text-transform: uppercase;
   font-size: 12px;
+  transition:
+    background-color 0.75s ease,
+    color 0.75s ease,
+    border-color 0.75s ease,
+    transform .30s ease;
 }
 .cta:hover {
   background: var(--gold);
