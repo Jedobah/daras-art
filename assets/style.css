@@ -4,7 +4,7 @@
   --muted: rgba(255, 255, 255, 0.62);
   --soft: rgba(255, 255, 255, 0.84);
   --line: rgba(208, 161, 102, 0.22);
-} /*backup avant refactoring su CSS*/  
+} /*backup avant refactoring su CSS*/
 * {
   box-sizing: border-box;
 }
@@ -372,26 +372,7 @@ section {
 .email:hover {
   color: white;
 }
-.form {
-  display: grid;
-  gap: 12px;
-}
-.form input,
-.form textarea {
-  width: 100%;
-  background: rgba(255, 255, 255, 0.045);
-  border: 1px solid rgba(255, 255, 255, 0.09);
-  color: white;
-  padding: 14px 15px;
-  font: inherit;
-}
-.form textarea {
-  min-height: 150px;
-  resize: vertical;
-}
-.form button {
-  justify-self: start;
-}
+
 .socials {
   display: flex;
   gap: 12px;
@@ -526,18 +507,6 @@ textarea:focus-visible {
   outline-offset: 4px;
 }
 
-.form button {
-  background: #f4eee5 !important;
-  color: #070605 !important;
-  border-color: #f4eee5 !important;
-}
-
-.form button:hover {
-  background: #ffffff !important;
-  color: #070605 !important;
-  border-color: #ffffff !important;
-}
-
 .loader {
   position: fixed;
   inset: 0;
@@ -614,19 +583,6 @@ textarea:focus-visible {
 
 .hero-slide:nth-child(3) {
   animation-delay: 18s !important;
-}
-
-/* Bouton Envoyer : noir, texte blanc, contour doré */
-.form button {
-  background: rgba(255, 255, 255, 0.035) !important;
-  color: #ffffff !important;
-  border-color: var(--line) !important;
-}
-
-.form button:hover {
-  background: var(--gold) !important;
-  color: #0a0705 !important;
-  border-color: var(--gold) !important;
 }
 
 /* Correction complète du formulaire contact */
