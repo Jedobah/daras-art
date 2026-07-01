@@ -4,7 +4,7 @@
   --muted: rgba(255, 255, 255, 0.62);
   --soft: rgba(255, 255, 255, 0.84);
   --line: rgba(208, 161, 102, 0.22);
-}
+} /*backup avant refactoring su CSS*/  
 * {
   box-sizing: border-box;
 }
