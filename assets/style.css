@@ -134,11 +134,12 @@ textarea:focus-visible {
 
 /* Correction complète du formulaire contact */
 #formulaire-contact {
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 14px !important;
-  max-width: 560px;
-  margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 720px;
+    margin-left: auto;
 }
 
 #formulaire-contact input,
@@ -148,9 +149,10 @@ textarea:focus-visible {
   background: rgba(255,255,255,.035) !important;
   border: 1px solid var(--line) !important;
   color: white !important;
-  padding: 15px 17px !important;
+  padding: 20px 22px !important;
   font: inherit !important;
-  border-radius: 10px !important;
+  font-size: 1.08rem;
+  border-radius: 14px !important;
 }
 
 #formulaire-contact input::placeholder,
@@ -165,7 +167,7 @@ textarea:focus-visible {
 }
 
 #formulaire-contact textarea {
-  min-height: 170px !important;
+  min-height: 260px !important;
   resize: vertical;
 }
 
@@ -174,6 +176,8 @@ textarea:focus-visible {
   background: rgba(255,255,255,.035) !important;
   color: white !important;
   border: 1px solid var(--line) !important;
+  padding: 18px 42px;
+  font-size: 1rem;
 }
 
 #formulaire-contact button:hover {
