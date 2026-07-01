@@ -70,4 +70,15 @@
 <section id="contact"><div class="wrap contact-box"><div><div class="section-kicker">Contact</div><h2 class="section-title">Entrer en relation</h2><p class="copy">Pour une exposition, une acquisition, une commande ou un échange autour d’une œuvre.</p><a class="email" href="mailto:ludovicdaras@gmail.com">ludovicdaras@gmail.com</a><div class="socials"><a href="https://www.instagram.com/daras_art?igsh=MW9zbjcyaDUyam13Yg==" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/share/18viSxwKbE/" target="_blank" rel="noopener">Facebook</a><a href="https://www.linkedin.com/in/daras-9298ab410?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">LinkedIn</a></div></div><form class="form" action="mailto:ludovicdaras@gmail.com" method="post" enctype="text/plain"><input name="Nom" placeholder="Nom"><input name="Email" type="email" placeholder="Email"><input name="Sujet" placeholder="Sujet"><textarea name="Message" placeholder="Message"></textarea><button class="cta" type="submit">Envoyer →</button></form></div></section>
 <footer><img class="footer-logo" src="assets/logo-daras.png" alt="Logo Daras"><div class="serif" style="font-size:32px;color:white;letter-spacing:.16em">DARAS</div><p>La lumière révèle ce que les ombres subliment.</p><p>© 2026 Daras — Artiste pastelliste</p></footer>
 <script>document.querySelectorAll(".filter").forEach(btn=>{btn.addEventListener("click",()=>{document.querySelectorAll(".filter").forEach(b=>b.classList.remove("active"));btn.classList.add("active");const f=btn.dataset.filter;document.querySelectorAll(".work").forEach(card=>{card.style.display=(f==="all"||card.dataset.cat===f)?"block":"none"})})});</script>
-</body></html>
+
+  if (window.location.hash === "#contact") {
+    window.addEventListener("load", function () {
+      const contact = document.querySelector("#contact");
+      if (contact) {
+        setTimeout(function () {
+          contact.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 300);
+      }
+    });
+  }
+</script></body></html>
