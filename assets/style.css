@@ -162,8 +162,10 @@ textarea:focus-visible {
 
 #formulaire-contact input:focus,
 #formulaire-contact textarea:focus {
-  border-color: var(--gold) !important;
-  background: rgba(255,255,255,.06) !important;
+  outline: none;
+    border: 1px solid var(--gold);
+    background: rgba(255,255,255,.05);
+    box-shadow: none;
 }
 
 #formulaire-contact textarea {
