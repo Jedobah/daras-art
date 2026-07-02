@@ -549,6 +549,31 @@ footer {
   margin: 0 auto 18px;
   display: block;
 }
+.footer-title {
+  font-size: 32px;
+  color: white;
+  letter-spacing: 0.16em;
+}
+
+.footer-links {
+  margin-top: 18px;
+  font-size: 0.9rem;
+}
+
+.footer-links a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+.footer-links a:hover {
+  color: var(--gold);
+}
+
+.footer-links span {
+  margin: 0 8px;
+  color: var(--muted);
+}
 .work-page {
   padding-top: 122px;
   min-height: 100vh;
