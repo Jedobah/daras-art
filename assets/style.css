@@ -7,6 +7,7 @@
 }
 * {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 html {
   scroll-behavior: smooth;
@@ -43,6 +44,11 @@ h3,
   font-family: "Cormorant Garamond", serif;
   font-weight: 500;
 }
+
+/* ======================================================
+   NAVIGATION
+====================================================== */
+
 .nav {
   position: fixed;
   top: 0;
@@ -90,6 +96,10 @@ h3,
 .links a:hover {
   color: #fff;
 }
+
+/* ======================================================
+   HERO
+====================================================== */
 .hero {
   min-height: 100svh;
   position: relative;
@@ -165,6 +175,49 @@ h3,
   display: block;
   filter: drop-shadow(0 18px 42px rgba(0, 0, 0, 0.68));
 }
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: grid;
+  place-items: center;
+  background: #030302;
+  animation: loaderOut 1.15s ease 2.25s forwards;
+  pointer-events: none;
+}
+
+.loader img {
+  width: min(180px, 45vw);
+  opacity: 0;
+  animation:
+    logoIn 1.2s ease forwards,
+    logoOut 0.85s ease 1.55s forwards;
+}
+
+@keyframes logoIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes logoOut {
+  to {
+    opacity: 0;
+    transform: scale(1.04);
+  }
+}
+
+@keyframes loaderOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 .kicker {
   color: var(--gold);
   letter-spacing: 0.28em;
@@ -202,7 +255,7 @@ h3,
     background-color 0.75s ease,
     color 0.75s ease,
     border-color 0.75s ease,
-    transform .30s ease;
+    transform 0.3s ease;
 }
 .cta:hover {
   background: var(--gold);
@@ -254,6 +307,10 @@ section {
   font-style: normal;
   color: var(--gold);
 }
+
+/* ======================================================
+   GALLERY
+====================================================== */
 .gallery {
   background: linear-gradient(#080604, #130d09);
   border-block: 1px solid var(--line);
@@ -362,11 +419,72 @@ section {
   color: var(--muted);
   font-size: 14px;
 }
+
+/* ======================================================
+   CONTACT
+====================================================== */
 .contact-box {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
   gap: clamp(30px, 7vw, 90px);
 }
+
+/* Formulaire de contact */
+#formulaire-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 720px;
+  margin-left: auto;
+}
+
+#formulaire-contact input,
+#formulaire-contact textarea {
+  width: 100%;
+  display: block;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid var(--line);
+  color: white;
+  padding: 20px 22px;
+  font: inherit;
+  font-size: 1.08rem;
+  border-radius: 14px;
+}
+
+#formulaire-contact input::placeholder,
+#formulaire-contact textarea::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+#formulaire-contact input:focus,
+#formulaire-contact textarea:focus {
+  outline: none;
+  border: 1px solid var(--gold);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: none;
+}
+
+#formulaire-contact textarea {
+  min-height: 260px;
+  resize: vertical;
+}
+
+#formulaire-contact button {
+  align-self: flex-start;
+  background: rgba(255, 255, 255, 0.035);
+  color: white;
+  border: 1px solid var(--line);
+  padding: 18px 42px;
+  font-size: 1rem;
+}
+
+#formulaire-contact button:hover {
+  background: var(--gold);
+  color: #0a0705;
+  border-color: var(--gold);
+}
+
 .email {
   display: inline-block;
   margin: 10px 0 22px;
@@ -396,6 +514,9 @@ section {
   background: var(--gold);
   color: #0a0705;
 }
+/* ======================================================
+   FOOTER
+====================================================== */
 footer {
   border-top: 1px solid var(--line);
   padding: 38px 20px;
@@ -439,7 +560,7 @@ footer {
   text-align: right;
 }
 .status {
-  color: var(--gold) !important;
+  color: var(--gold);
 }
 .back {
   display: inline-block;
@@ -485,11 +606,7 @@ footer {
   }
 }
 
-/* Version 4 — corrections mobile et formulaire */
-* {
-  -webkit-tap-highlight-color: transparent;
-}
-
+/* Accessibilité et interactions */
 a,
 button,
 input,
@@ -512,108 +629,8 @@ textarea:focus-visible {
   outline-offset: 4px;
 }
 
-.loader {
-  position: fixed;
-  inset: 0;
-  z-index: 999;
-  display: grid;
-  place-items: center;
-  background: #030302;
-  animation: loaderOut 1.15s ease 2.25s forwards;
-  pointer-events: none;
-}
-
-.loader img {
-  width: min(180px, 45vw);
-  opacity: 0;
-  animation:
-    logoIn 1.2s ease forwards,
-    logoOut 0.85s ease 1.55s forwards;
-}
-
-@keyframes logoIn {
-  from {
-    opacity: 0;
-    transform: scale(0.92);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@keyframes logoOut {
-  to {
-    opacity: 0;
-    transform: scale(1.04);
-  }
-}
-
-@keyframes loaderOut {
-  to {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   .loader {
     display: none;
   }
-}
-
-/* Correction complète du formulaire contact */
-#formulaire-contact {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 100%;
-  max-width: 720px;
-  margin-left: auto;
-}
-
-#formulaire-contact input,
-#formulaire-contact textarea {
-  width: 100% !important;
-  display: block !important;
-  background: rgba(255, 255, 255, 0.035) !important;
-  border: 1px solid var(--line) !important;
-  color: white !important;
-  padding: 20px 22px !important;
-  font: inherit !important;
-  font-size: 1.08rem;
-  border-radius: 14px !important;
-}
-
-#formulaire-contact input::placeholder,
-#formulaire-contact textarea::placeholder {
-  color: rgba(255, 255, 255, 0.45) !important;
-}
-
-#formulaire-contact input:focus,
-#formulaire-contact textarea:focus {
-  outline: none;
-  border: 1px solid var(--gold);
-  background: rgba(255, 255, 255, 0.05);
-  box-shadow: none;
-}
-
-#formulaire-contact textarea {
-  min-height: 260px !important;
-  resize: vertical;
-}
-
-#formulaire-contact button {
-  align-self: flex-start;
-  background: rgba(255, 255, 255, 0.035) !important;
-  color: white !important;
-  border: 1px solid var(--line) !important;
-  padding: 18px 42px;
-  font-size: 1rem;
-}
-
-#formulaire-contact button:hover {
-  background: var(--gold) !important;
-  color: #0a0705 !important;
-  border-color: var(--gold) !important;
 }
