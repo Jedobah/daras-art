@@ -16,7 +16,9 @@ document.querySelectorAll(".filter").forEach((button) => {
 });
 
 window.addEventListener("load", () => {
-  if (window.location.hash !== "#formulaire-contact") return;
+  const params = new URLSearchParams(window.location.search);
+
+  if (params.get("contact") !== "1") return;
 
   const target = document.querySelector("#formulaire-contact");
 
@@ -27,5 +29,5 @@ window.addEventListener("load", () => {
       behavior: "smooth",
       block: "center",
     });
-  }, 1000);
+  }, 800);
 });
