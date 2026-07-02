@@ -16,9 +16,9 @@ document.querySelectorAll(".filter").forEach((button) => {
 });
 
 window.addEventListener("load", () => {
-  if (!window.location.hash) return;
+  if (window.location.hash !== "#formulaire-contact") return;
 
-  const target = document.querySelector(window.location.hash);
+  const target = document.querySelector("#formulaire-contact");
 
   if (!target) return;
 
