@@ -9,9 +9,29 @@
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
 }
-/*backup scrollbar*/
+
 html {
   scroll-behavior: smooth;
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: rgba(208, 161, 102, 0.35) #030302;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #030302;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(208, 161, 102, 0.35);
+  border-radius: 999px;
+  transition: background-color 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold);
 }
 body {
   margin: 0;
