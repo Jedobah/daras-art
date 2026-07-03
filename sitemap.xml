@@ -49,6 +49,12 @@
   </url>
 
   <url>
+  <loc>https://daras-art.fr/oeuvres/vibrations.html</loc>
+  <changefreq>yearly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+  <url>
     <loc>https://daras-art.fr/oeuvres/vidrecome-pour-regis.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
