@@ -651,8 +651,10 @@ footer {
     width: min(210px, 58vw);
   }
 }
+/* ======================================================
+   Accessibilité et interactions
+====================================================== */
 
-/* Accessibilité et interactions */
 a,
 button,
 input,
