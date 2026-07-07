@@ -9,8 +9,10 @@ document.querySelectorAll(".filter").forEach((button) => {
     const filter = button.dataset.filter;
 
     document.querySelectorAll(".work").forEach((card) => {
+      const categories = card.dataset.cat.split(" ");
+
       card.style.display =
-        filter === "all" || card.dataset.cat === filter ? "block" : "none";
+        filter === "all" || categories.includes(filter) ? "" : "none";
     });
   });
 });
