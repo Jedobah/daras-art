@@ -19,6 +19,12 @@
   </url>
 
   <url>
+    <loc>https://daras-art.fr/oeuvres/peche-et-cerises.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://daras-art.fr/oeuvres/juru-buru.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
