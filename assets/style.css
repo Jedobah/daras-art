@@ -288,19 +288,19 @@ h3,
 .hero-slide:nth-child(1) {
   background-image:
     linear-gradient(rgba(3, 3, 2, 0.58), rgba(3, 3, 2, 0.78)),
-    url("oeuvre-01.jpg");
+    url("oeuvre-01.webp");
   animation-delay: 0s;
 }
 .hero-slide:nth-child(2) {
   background-image:
     linear-gradient(rgba(3, 3, 2, 0.64), rgba(3, 3, 2, 0.82)),
-    url("oeuvre-03.jpg");
+    url("oeuvre-03.webp");
   animation-delay: 9s;
 }
 .hero-slide:nth-child(3) {
   background-image:
     linear-gradient(rgba(3, 3, 2, 0.66), rgba(3, 3, 2, 0.82)),
-    url("oeuvre-07.jpg");
+    url("oeuvre-07.webp");
   animation-delay: 18s;
 }
 @keyframes heroFade {
