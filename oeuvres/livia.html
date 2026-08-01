@@ -24,10 +24,7 @@
 
               "image": "https://daras-art.fr/assets/oeuvre-05.jpg",
               "url": "https://daras-art.fr/oeuvres/livia.html",
-              "description": "Livia est un portrait où le regard devient le centre de la
-                          composition. Dans son œil se reflètent des montagnes au loin. Que
-                          regarde-t-elle ? Et le vert de son œil n'est-il pas, lui aussi, un
-                          reflet ?",
+             "description": "Livia est un portrait où le regard devient le centre de la composition. Dans son œil se reflètent des montagnes au loin. Que regarde-t-elle ? Et le vert de son œil n'est-il pas, lui aussi, un reflet ?",
               "inLanguage": "fr",
               "offers": {
                 "@type": "Offer",
@@ -36,23 +33,40 @@
             }
     </script>
 
+    <script src="../assets/script.js" defer></script>
     <link rel="stylesheet" href="../assets/style.css" />
   </head>
   <body>
     <nav class="nav">
-      <a class="brand" href="../index.html"
-        ><img src="../assets/logo-daras.png" alt="Logo Daras" /><span
-          >DARAS</span
-        ></a
-      >
-      <div class="links">
-        <a href="../index.html#oeuvres">Œuvres</a
-        ><a href="../index.html#disponibles">Disponibles</a
-        ><a href="../index.html#apropos">À propos</a
-        ><a href="../presse.html">Presse</a
-        ><a href="../index.html#contact">Contact</a>
-      </div>
-    </nav>
+  <a class="brand" href="../index.html">
+    <img
+      src="../assets/logo-daras.png"
+      alt="Logo de Daras, artiste pastelliste"
+    />
+    <span>DARAS</span>
+  </a>
+
+  <button
+    class="menu-toggle"
+    type="button"
+    aria-label="Ouvrir le menu"
+    aria-expanded="false"
+    aria-controls="main-navigation"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="links" id="main-navigation">
+    <a href="../index.html#oeuvres">Œuvres</a>
+    <a href="../index.html#disponibles">Disponibles</a>
+    <a href="../index.html#apropos">À propos</a>
+    <a href="../presse.html">Presse</a>
+    <a href="../expositions.html">Expositions</a>
+    <a href="../index.html#contact">Contact</a>
+  </div>
+</nav>
     <main class="work-page">
       <section>
         <div class="wrap work-layout">

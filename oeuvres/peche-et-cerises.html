@@ -8,6 +8,10 @@
       name="description"
       content="Pêche et cerises, pastel sec de Daras représentant une pêche et des cerises sur papier velours."
     />
+    <link
+      rel="canonical"
+      href="https://daras-art.fr/oeuvres/peche-et-cerises.html"
+    />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -45,22 +49,39 @@
       }
     </script>
 
+    <script src="../assets/script.js" defer></script>
     <link rel="stylesheet" href="../assets/style.css" />
   </head>
 
   <body>
     <nav class="nav">
-      <a class="brand" href="../index.html"
-        ><img src="../assets/logo-daras.png" alt="Logo Daras" /><span
-          >DARAS</span
-        ></a
+      <a class="brand" href="../index.html">
+        <img
+          src="../assets/logo-daras.png"
+          alt="Logo de Daras, artiste pastelliste"
+        />
+        <span>DARAS</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="main-navigation"
       >
-      <div class="links">
-        <a href="../index.html#oeuvres">Œuvres</a
-        ><a href="../index.html#disponibles">Disponibles</a
-        ><a href="../index.html#apropos">À propos</a
-        ><a href="../presse.html">Presse</a
-        ><a href="../index.html#contact">Contact</a>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="links" id="main-navigation">
+        <a href="../index.html#oeuvres">Œuvres</a>
+        <a href="../index.html#disponibles">Disponibles</a>
+        <a href="../index.html#apropos">À propos</a>
+        <a href="../presse.html">Presse</a>
+        <a href="../expositions.html">Expositions</a>
+        <a href="../index.html#contact">Contact</a>
       </div>
     </nav>
     <main class="work-page">

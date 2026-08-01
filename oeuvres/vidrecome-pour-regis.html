@@ -27,7 +27,7 @@
               "artform": "Pastel painting",
               "artMedium": "Pastel sec",
               "genre": "Nature morte",
-               "dateCreated": "2026",
+               "dateCreated": "2015",
 
               "width": {
                 "@type": "QuantitativeValue",
@@ -41,14 +41,7 @@
               },
               "image": "https://daras-art.fr/assets/oeuvre-08.jpg",
               "url": "https://daras-art.fr/oeuvres/vidrecome-pour-regis.html",
-              "description": "Le vidrecome est un grand verre à boire que les convives se
-                          passaient tour à tour, utilisé au XVIIᵉ siècle. Souvent représenté
-                          dans les natures mortes néerlandaises, il devient un objet de
-                          lumière où se mêlent les reflets et les transparences. Cette œuvre
-                          a été réalisée pour un ami, dans la tradition des natures mortes
-                          de Pieter Claesz. J'y retrouve ce qui me fascine dans le
-                          clair-obscur : faire dialoguer le verre, le métal, les fruits et
-                          la lumière.",
+              "description": "Le vidrecome est un grand verre à boire que les convives se passaient tour à tour, utilisé au XVIIᵉ siècle. Souvent représenté dans les natures mortes néerlandaises, il devient un objet de lumière où se mêlent les reflets et les transparences. Cette œuvre a été réalisée pour un ami, dans la tradition des natures mortes de Pieter Claesz. J'y retrouve ce qui me fascine dans le clair-obscur : faire dialoguer le verre, le métal, les fruits et la lumière.",
               "inLanguage": "fr",
               "offers": {
         "@type": "Offer",
@@ -58,23 +51,40 @@
             }
     </script>
 
+    <script src="../assets/script.js" defer></script>
     <link rel="stylesheet" href="../assets/style.css" />
   </head>
   <body>
     <nav class="nav">
-      <a class="brand" href="../index.html"
-        ><img src="../assets/logo-daras.png" alt="Logo Daras" /><span
-          >DARAS</span
-        ></a
-      >
-      <div class="links">
-        <a href="../index.html#oeuvres">Œuvres</a
-        ><a href="../index.html#disponibles">Disponibles</a
-        ><a href="../index.html#apropos">À propos</a
-        ><a href="../presse.html">Presse</a
-        ><a href="../index.html#contact">Contact</a>
-      </div>
-    </nav>
+  <a class="brand" href="../index.html">
+    <img
+      src="../assets/logo-daras.png"
+      alt="Logo de Daras, artiste pastelliste"
+    />
+    <span>DARAS</span>
+  </a>
+
+  <button
+    class="menu-toggle"
+    type="button"
+    aria-label="Ouvrir le menu"
+    aria-expanded="false"
+    aria-controls="main-navigation"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="links" id="main-navigation">
+    <a href="../index.html#oeuvres">Œuvres</a>
+    <a href="../index.html#disponibles">Disponibles</a>
+    <a href="../index.html#apropos">À propos</a>
+    <a href="../presse.html">Presse</a>
+    <a href="../expositions.html">Expositions</a>
+    <a href="../index.html#contact">Contact</a>
+  </div>
+</nav>
     <main class="work-page">
       <section>
         <div class="wrap work-layout">

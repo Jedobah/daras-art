@@ -8,63 +8,82 @@
       name="description"
       content="Fleurs dans un vase bleu , pastel sec de Daras et Virginie Gaubert. Un dialogue entre deux artistes représentant des fleurs dans un vase bleu."
     />
+    <link
+      rel="canonical"
+      href="https://daras-art.fr/oeuvres/fleurs-dans-un-vase-bleu.html"
+    />
     <script type="application/ld+json">
-            {
-              "@context": "https://schema.org",
-              "@type": "VisualArtwork",
-              "@id": "https://daras-art.fr/oeuvres/fleurs-dans-un-vase-bleu.html#artwork",
-              "name": "Fleurs dans un vase bleu",
-             "creator": {
+                {
+                  "@context": "https://schema.org",
+                  "@type": "VisualArtwork",
+                  "@id": "https://daras-art.fr/oeuvres/fleurs-dans-un-vase-bleu.html#artwork",
+                  "name": "Fleurs dans un vase bleu",
+                 "creator": [ {
+            "@type": "Person",
+            "@id": "https://daras-art.fr/#artist",
+            "name": "Daras",
+            "alternateName": "Ludovic Daras"
+          },{
         "@type": "Person",
-        "@id": "https://daras-art.fr/#artist",
-        "name": "Daras",
-        "alternateName": "Ludovic Daras"
-      },
-              "artform":"Pastel painting",
-              "artMedium": "Pastel sec",
-              "genre": "Fleurs",
-              "dateCreated": "2026",
-              "width": {
-                "@type": "QuantitativeValue",
-                "value": 30,
-                "unitCode": "CMT"
-              },
-              "height": {
-                "@type": "QuantitativeValue",
-                "value": 40,
-                "unitCode": "CMT"
-              },
-              "image": "https://daras-art.fr/assets/oeuvre-15.webp",
-              "url": "https://daras-art.fr/oeuvres/fleurs-dans-un-vase-bleu.html",
-              "description": "Deux regards, quatre mains, une même envie de créer.
-
-             Réalisé dans la spontanéité, ce pastel est né d'un dialogue entre deux artistes (Virginie Gaubert et Daras), où chaque geste répond à l'autre sans jamais chercher à le dominer. Les fleurs se sont librement invitées dans le vase, mêlant formes, couleurs et lumières.
-             Ce bouquet est une ode à la liberté du geste, à l'imprévu et à la créativité.
-
-             Une belle rencontre.",
-              "inLanguage": "fr",
-              "offers": {
-                "@type": "Offer",
-                "availability": "https://schema.org/LimitedAvailability"
-              }
-            }
+        "name": "Virginie Gaubert"
+      }],
+                  "artform":"Pastel painting",
+                  "artMedium": "Pastel sec",
+                  "genre": "Fleurs",
+                  "dateCreated": "2026",
+                  "width": {
+                    "@type": "QuantitativeValue",
+                    "value": 30,
+                    "unitCode": "CMT"
+                  },
+                  "height": {
+                    "@type": "QuantitativeValue",
+                    "value": 40,
+                    "unitCode": "CMT"
+                  },
+                  "image": "https://daras-art.fr/assets/oeuvre-15.webp",
+                  "url": "https://daras-art.fr/oeuvres/fleurs-dans-un-vase-bleu.html",
+                  "description": "Deux regards, quatre mains, une même envie de créer. Réalisé dans la spontanéité, ce pastel est né d'un dialogue entre deux artistes (Virginie Gaubert et Daras), où chaque geste répond à l'autre sans jamais chercher à le dominer. Les fleurs se sont librement invitées dans le vase, mêlant formes, couleurs et lumières. Ce bouquet est une ode à la liberté du geste, à l'imprévu et à la créativité. Une belle rencontre.",
+                  "inLanguage": "fr",
+                  "offers": {
+                    "@type": "Offer",
+                    "availability": "https://schema.org/LimitedAvailability"
+                  }
+                }
     </script>
 
+    <script src="../assets/script.js" defer></script>
     <link rel="stylesheet" href="../assets/style.css" />
   </head>
   <body>
     <nav class="nav">
-      <a class="brand" href="../index.html"
-        ><img src="../assets/logo-daras.png" alt="Logo Daras" /><span
-          >DARAS</span
-        ></a
+      <a class="brand" href="../index.html">
+        <img
+          src="../assets/logo-daras.png"
+          alt="Logo de Daras, artiste pastelliste"
+        />
+        <span>DARAS</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="main-navigation"
       >
-      <div class="links">
-        <a href="../index.html#oeuvres">Œuvres</a
-        ><a href="../index.html#disponibles">Disponibles</a
-        ><a href="../index.html#apropos">À propos</a
-        ><a href="../presse.html">Presse</a
-        ><a href="../index.html#contact">Contact</a>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="links" id="main-navigation">
+        <a href="../index.html#oeuvres">Œuvres</a>
+        <a href="../index.html#disponibles">Disponibles</a>
+        <a href="../index.html#apropos">À propos</a>
+        <a href="../presse.html">Presse</a>
+        <a href="../expositions.html">Expositions</a>
+        <a href="../index.html#contact">Contact</a>
       </div>
     </nav>
     <main class="work-page">

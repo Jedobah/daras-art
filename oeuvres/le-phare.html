@@ -34,12 +34,7 @@
               },
               "image": "https://daras-art.fr/assets/oeuvre-03.jpg",
               "url": "https://daras-art.fr/oeuvres/le-phare.html",
-              "description": "Pris dans les vagues, le phare oppose sa présence stoïque et
-                          silencieuse à la violence de la mer. Je n'ai pas cherché à
-                          représenter la tempête elle-même, mais ce point fixe qui demeure
-                          lorsque tout semble en mouvement. Le pastel sec m'a permis de
-                          modeler les embruns et de laisser la lumière émerger comme un
-                          repère au cœur des éléments.",
+              "description": "Pris dans les vagues, le phare oppose sa présence stoïque et silencieuse à la violence de la mer. Je n'ai pas cherché à représenter la tempête elle-même, mais ce point fixe qui demeure lorsque tout semble en mouvement. Le pastel sec m'a permis de modeler les embruns et de laisser la lumière émerger comme un repère au cœur des éléments.",
               "inLanguage": "fr",
               "offers": {
                 "@type": "Offer",
@@ -48,23 +43,40 @@
             }
     </script>
 
+    <script src="../assets/script.js" defer></script>
     <link rel="stylesheet" href="../assets/style.css" />
   </head>
   <body>
     <nav class="nav">
-      <a class="brand" href="../index.html"
-        ><img src="../assets/logo-daras.png" alt="Logo Daras" /><span
-          >DARAS</span
-        ></a
-      >
-      <div class="links">
-        <a href="../index.html#oeuvres">Œuvres</a
-        ><a href="../index.html#disponibles">Disponibles</a
-        ><a href="../index.html#apropos">À propos</a
-        ><a href="../presse.html">Presse</a
-        ><a href="../index.html#contact">Contact</a>
-      </div>
-    </nav>
+  <a class="brand" href="../index.html">
+    <img
+      src="../assets/logo-daras.png"
+      alt="Logo de Daras, artiste pastelliste"
+    />
+    <span>DARAS</span>
+  </a>
+
+  <button
+    class="menu-toggle"
+    type="button"
+    aria-label="Ouvrir le menu"
+    aria-expanded="false"
+    aria-controls="main-navigation"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="links" id="main-navigation">
+    <a href="../index.html#oeuvres">Œuvres</a>
+    <a href="../index.html#disponibles">Disponibles</a>
+    <a href="../index.html#apropos">À propos</a>
+    <a href="../presse.html">Presse</a>
+    <a href="../expositions.html">Expositions</a>
+    <a href="../index.html#contact">Contact</a>
+  </div>
+</nav>
     <main class="work-page">
       <section>
         <div class="wrap work-layout">

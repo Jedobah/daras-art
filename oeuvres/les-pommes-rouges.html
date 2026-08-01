@@ -40,11 +40,7 @@
         },
         "image": "https://daras-art.fr/assets/oeuvre-02.jpg",
         "url": "https://daras-art.fr/oeuvres/les-pommes-rouges.html",
-        "description": "Quelques pommes, une lumière, quelques ombres. Il n'en fallait pas
-                    davantage pour explorer les variations du rouge et les subtilités
-                    de la matière. Derrière l'apparente simplicité du sujet, chaque
-                    reflet, chaque demi-teinte et chaque ombre participent à
-                    l'équilibre de la composition.",
+        "description": "Quelques pommes, une lumière, quelques ombres. Il n'en fallait pas davantage pour explorer les variations du rouge et les subtilités de la matière. Derrière l'apparente simplicité du sujet, chaque reflet, chaque demi-teinte et chaque ombre participent à l'équilibre de la composition.",
         "inLanguage": "fr",
         "offers": {
           "@type": "Offer",
@@ -53,23 +49,40 @@
       }
     </script>
 
+    <script src="../assets/script.js" defer></script>
     <link rel="stylesheet" href="../assets/style.css" />
   </head>
   <body>
     <nav class="nav">
-      <a class="brand" href="../index.html"
-        ><img src="../assets/logo-daras.png" alt="Logo Daras" /><span
-          >DARAS</span
-        ></a
-      >
-      <div class="links">
-        <a href="../index.html#oeuvres">Œuvres</a
-        ><a href="../index.html#disponibles">Disponibles</a
-        ><a href="../index.html#apropos">À propos</a
-        ><a href="../presse.html">Presse</a
-        ><a href="../index.html#contact">Contact</a>
-      </div>
-    </nav>
+  <a class="brand" href="../index.html">
+    <img
+      src="../assets/logo-daras.png"
+      alt="Logo de Daras, artiste pastelliste"
+    />
+    <span>DARAS</span>
+  </a>
+
+  <button
+    class="menu-toggle"
+    type="button"
+    aria-label="Ouvrir le menu"
+    aria-expanded="false"
+    aria-controls="main-navigation"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="links" id="main-navigation">
+    <a href="../index.html#oeuvres">Œuvres</a>
+    <a href="../index.html#disponibles">Disponibles</a>
+    <a href="../index.html#apropos">À propos</a>
+    <a href="../presse.html">Presse</a>
+    <a href="../expositions.html">Expositions</a>
+    <a href="../index.html#contact">Contact</a>
+  </div>
+</nav>
     <main class="work-page">
       <section>
         <div class="wrap work-layout">
